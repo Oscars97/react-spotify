@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 export class Songs extends React.Component {
 	constructor() {
 		super();
+
 		this.state = {
 			fetchData: []
 		};
@@ -16,16 +17,17 @@ export class Songs extends React.Component {
 			});
 		// console.log(this.fetchData);
 	}
+
 	render() {
 		return (
 			<div className="image-box">
 				<h1>Canciones:</h1>
 				<div className="canciones">
-					<ol>
+					<ul>
 						{this.state.fetchData.map((cancion, i) => {
 							return (
 								<li
-									onClick={() => {
+									onClick={e => {
 										let newArray = cancion.url.split("/");
 
 										let ultimaPosicion =
@@ -41,11 +43,11 @@ export class Songs extends React.Component {
 									}}
 									key={i}>
 									{" "}
-									{cancion.name}{" "}
+									{i + " " + cancion.name}{" "}
 								</li>
 							);
 						})}
-					</ol>
+					</ul>
 				</div>
 			</div>
 		);

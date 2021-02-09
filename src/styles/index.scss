@@ -16,7 +16,6 @@ body{
     background: black;
     color:white;
 
-
 }
 
 ul{
@@ -29,9 +28,24 @@ li{
     cursor: pointer;
 }
 
+
 li:hover{
 background: grey;
 cursor: pointer;
 }
 
+.canciones{
+    border: solid 1px rgb(133, 130, 130);
+    border-right: solid 1px rgb(133, 130, 130);
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
 
+.app{
+    color: green
+}
+strong{
+    font-size: 3em;
+    color: green;
+}
