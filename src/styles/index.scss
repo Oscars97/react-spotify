@@ -11,3 +11,27 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body{
+    background: black;
+    color:white;
+
+
+}
+
+ul{
+    list-style: none;
+    width: 50%;
+}
+
+li{
+    border-bottom: solid 0.5px rgb(133, 130, 130);
+    cursor: pointer;
+}
+
+li:hover{
+background: grey;
+cursor: pointer;
+}
+
+
