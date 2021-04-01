@@ -15,7 +15,6 @@ export class Songs extends React.Component {
 			.then(data => {
 				this.setState({ fetchData: data });
 			});
-		// console.log(this.fetchData);
 	}
 
 	render() {
@@ -36,8 +35,6 @@ export class Songs extends React.Component {
 										let urlCompleta =
 											"https://assets.breatheco.de/apis/sound/" +
 											cancion.url;
-
-										console.log(urlCompleta);
 
 										this.props.setSong(urlCompleta);
 									}}
